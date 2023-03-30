@@ -119,10 +119,24 @@ curl -X POST \
 
 #### Explorer : https://tiascan.com/light-nodes
 
-### If you get a message header: not found, please try these steps:
+#### If you get a message header: not found, please try these steps:
 
 1. stop your light node
 2. go to ``.celestia-light-blockspacerace-0 directory``
 3. delete /data folder, make sure you DO NOT delete the keys folder
 4. init your light node again
 5. start the light node
+
+
+### Delete Node
+
+```
+systemctl stop celestia-lightd
+rm -rf /etc/systemd/system/celestia-lightd.service
+rm -rf celestia-node
+rm -rf .celestia-app
+rm -rf .celestia-light-blockspacerace-0
+rm -f $(which celestia-lightd)
+rm -rf $HOME/.celestia-lightd
+rm -rf $HOME/celestia-lightd
+```
