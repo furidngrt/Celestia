@@ -1,3 +1,5 @@
+<p align="center"><img height="150" height="auto" src="https://user-images.githubusercontent.com/63885192/210028418-e15f2938-cb58-468f-8711-7375d66a038a.png"></p>
+
 # Celestia Light Node
 
 ### Update & install the necessary dependencies
@@ -105,3 +107,11 @@ curl -X POST \
 
 
 #### Explorer : https://tiascan.com/light-nodes
+
+### If you get a message header: not found, please try these steps:
+
+1. stop your light node
+2. go to ``.celestia-light-blockspacerace-0 directory``
+3. delete /data folder, make sure you DO NOT delete the keys folder
+4. init your light node again
+5. start the light node
