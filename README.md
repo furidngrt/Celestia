@@ -1,6 +1,17 @@
-<p align="center"><img height="150" height="auto" src="https://user-images.githubusercontent.com/63885192/210028418-e15f2938-cb58-468f-8711-7375d66a038a.png"></p>
+<p align="center"><img height="150" height="auto" src="https://user-images.githubusercontent.com/63885192/228786938-4112e207-17e4-43c4-bec6-ec93e137df79.jpg"></p>
 
 # Celestia Light Node
+
+Light nodes ensure data availability. This is the most common way to interact with the Celestia network.
+
+## Hardware requirements
+
+
+· Memory: 2 GB RAM
+
+· CPU: Single core
+
+· Disk: 5 GB SSD storage
 
 ### Update & install the necessary dependencies
 
