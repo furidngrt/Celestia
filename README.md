@@ -157,7 +157,7 @@ cd .celestia-light-blockspacerace-0
 sudo rm -rf blocks index data transients
 ```
 
-init your light node:
+### init your light node:
 ```
 celestia light init --p2p.network blockspacerace
 ```
