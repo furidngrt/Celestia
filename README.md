@@ -127,6 +127,28 @@ curl -X POST \
 4. init your light node again
 5. start the light node
 
+### Update
+
+1. stop your node
+2. cd celestia-node
+3. git fetch
+4. git checkout v0.8.1
+5. make build
+6. sudo make install
+ 
+for light nodes: 
+cd $HOME
+cd .celestia-light-blockspacerace-0
+sudo rm -rf blocks index data transients
+
+init your light node:
+```
+celestia light init --p2p.network blockspacerace
+```
+start your node again
+```
+systemctl start celestia-lightd
+```
 
 ### Delete Node
 
