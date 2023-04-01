@@ -129,7 +129,7 @@ curl -X POST \
 
 ### Update
 
-stop your node first
+#### stop your node first
 ```
 cd celestia-node
 ```
@@ -146,7 +146,7 @@ make build
 sudo make install
 ```
  
-for light nodes: 
+### for light nodes: 
 ```
 cd $HOME
 ```
