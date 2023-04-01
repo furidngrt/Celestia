@@ -129,17 +129,33 @@ curl -X POST \
 
 ### Update
 
-1. stop your node
-2. cd celestia-node
-3. git fetch
-4. git checkout v0.8.1
-5. make build
-6. sudo make install
+stop your node first
+```
+cd celestia-node
+```
+```
+git fetch
+```
+```
+git checkout v0.8.1
+```
+```
+make build
+```
+```
+sudo make install
+```
  
 for light nodes: 
+```
 cd $HOME
+```
+```
 cd .celestia-light-blockspacerace-0
+```
+```
 sudo rm -rf blocks index data transients
+```
 
 init your light node:
 ```
