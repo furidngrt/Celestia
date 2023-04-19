@@ -166,6 +166,30 @@ start your node again
 systemctl start celestia-lightd
 ```
 
+### Update
+
+Instructions to upgrade for light nodes:
+
+1. stop your node
+2. Upgrade go:
+
+```
+ver="1.20" 
+cd $HOME 
+wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" 
+sudo rm -rf /usr/local/go 
+sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz" 
+rm "go$ver.linux-amd64.tar.gz"
+```
+
+3. `cd celestia-node`
+4. `git fetch`
+5. `git checkout v0.9.1`
+6. `make build` (follow also step 7 if you did that when you set it up in phase 2)
+7. `sudo make install`
+8. `celestia light config-update --p2p.network blockspacerace`
+9. start your node again
+
 ### Delete Node
 
 ```
