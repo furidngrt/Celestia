@@ -185,7 +185,7 @@ rm "go$ver.linux-amd64.tar.gz"
 3. `cd celestia-node`
 4. `git fetch`
 5. `git checkout v0.9.1`
-6. `make build` (follow also step 7 if you did that when you set it up in phase 2)
+6. `make build`
 7. `sudo make install`
 8. `celestia light config-update --p2p.network blockspacerace`
 9. start your node again
