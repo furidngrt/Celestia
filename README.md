@@ -130,11 +130,13 @@ curl -X POST \
 ### Update
 
 #### stop your node first
-`cd celestia-node`
-`git fetch`
-`git checkout v0.8.1`
-`make build`
-`sudo make install`
+```
+cd celestia-node
+git fetch
+git checkout v0.8.1
+make build
+sudo make install
+```
  
 ### for light nodes: 
 ```
