@@ -170,7 +170,7 @@ systemctl start celestia-lightd
 
 Instructions to upgrade for light nodes:
 
-1. stop your node
+1. stop your node `sudo systemctl stop celestia-lightd`
 2. Upgrade go:
 
 ```
@@ -187,12 +187,12 @@ fi
 ```
 
 3. `cd celestia-node`
-4. `git fetch`
-5. `git checkout v0.9.1`
+4. `git fetch --tags`
+5. `git checkout v0.10.2`
 6. `make build`
 7. `sudo make install`
 8. `celestia light config-update --p2p.network blockspacerace`
-9. start your node again
+9. start your node again `celestia light config-update --p2p.network blockspacerace`
 
 ### Delete Node
 
